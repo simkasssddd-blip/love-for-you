@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для моего любимого ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;
+display:flex;justify-content:center;align-items:center;
+padding:22px;
+font-family:Georgia,serif;
+color:#fff0f5;
+background:linear-gradient(145deg,#24091f,#641b3e,#a34368);
+text-align:center;
+}
+main{max-width:480px;width:100%;padding:30px 20px}
+h1{font-size:36px;color:#ffd5e5;text-shadow:0 0 15px #ff82ae}
+p{font-size:19px;line-height:1.8}
+button{
+border:0;border-radius:35px;padding:17px 23px;
+font-size:17px;font-weight:bold;
+background:#ffe0eb;color:#77213f;
+margin:15px auto;cursor:pointer;
+}
+.hidden{display:none}
+.final{font-size:43px;font-weight:bold;color:#ffd5e5;text-shadow:0 0 20px #ff8aaa}
+.hearts{font-size:28px;margin:25px}
+</style>
+</head>
+<body>
+<main>
+<div class="hearts">♡ ♥ ♡</div>
+<h1>А знаешь что?❤️‍🔥</h1>
+<button id="first">нажми пазязя котик💕</button>
+<section id="message" class="hidden">
+<p>Что я тебя очень сильно люблю, словами не описать того просто что я чувствую к тебе. А знал бы ты как я скучаю ты бы розплакался. Словами не можно передать то насколько ты красив, добр, уютный, и хороший. И я надеюсь что мы будем еще встричатся пока ктото из нас не умрет, ну или пока ты не захочешь расстатся (только попробуй сука)</p>
+<div class="hearts">💕</div>
+<button id="second">С любовью твоя любимость</button>
+</section>
+<section id="ending" class="hidden">
+<div class="hearts">❤️‍🔥</div>
+<div class="final">Я ТЕБЯ<br>ЛЮБЛЮ❤️‍🔥</div>
+<div class="hearts">♡ ∞ ♡</div>
+</section>
+</main>
+<script>
+document.getElementById('first').onclick=function(){
+document.getElementById('message').classList.remove('hidden');
+this.remove();
+};
+document.getElementById('second').onclick=function(){
+document.getElementById('ending').classList.remove('hidden');
+this.remove();
+};
+</script>
+</body>
+</html>
